@@ -1,3 +1,5 @@
+---
+
 global:
   name: consul
   enabled: true
@@ -10,7 +12,9 @@ global:
     verify: true
   acls:
     manageSystemACLs: true
+
 connectInject:
   enabled: true
+
 controller:
   enabled: true
