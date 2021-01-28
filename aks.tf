@@ -10,6 +10,7 @@ module "network" {
   subnet_prefixes     = ["11.0.1.0/24"]
   subnet_names        = ["subnet1"]
   depends_on          = [azurerm_resource_group.project]
+
   tags = {
     Operator = "Terraform"
   }
@@ -26,6 +27,7 @@ module "aks" {
   vnet_subnet_id       = module.network.vnet_subnets[0]
   os_disk_size_gb      = 100
   depends_on           = [module.network]
+
   tags = {
     Operator = "Terraform"
   }
