@@ -13,7 +13,7 @@ resource "kubernetes_secret" "consul_gossip_encryption_key" {
   # You'll want to use your own secret or something like HashiCorp Vault to generate this regularly... 
   # but alas, this is only a demo
   data = {
-    key = "QXRDS0lVanE0RUg5L0JLUC9XcFQ0YkFaelZyR2pVUTZvVmpzSUtXUlowdz0"
+    key = "VuM/Fj4rf+QFUD8jo4Hg7k2JEKMjAMFHOePPXTkXqxE="
   }
 
   type = "Opaque"

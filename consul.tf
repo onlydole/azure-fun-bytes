@@ -21,4 +21,5 @@ resource "helm_release" "consul" {
     name  = "global.datacenter"
     value = var.project_name
   }
+  depends_on = [kubernetes_secret.consul_gossip_encryption_key]
 }
