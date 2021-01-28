@@ -4,8 +4,8 @@ resource "kubernetes_secret" "consul_gossip_encryption_key" {
     name = "consul-gossip-encryption-key"
   }
 
-  # We are hard-coding this value for the purpose of this demo. This is NOT a best-practice!
-  # For secrets management, we recommend HashiCorp Vault or your Cloud provider's service(s).
+  # This hard-coded value is for demonstration purposes only. This is NOT a best-practice!
+  # For secrets management, we recommend HashiCorp Vault and your provider's service(s).
   data = {
     key = "VuM/Fj4rf+QFUD8jo4Hg7k2JEKMjAMFHOePPXTkXqxE="
   }

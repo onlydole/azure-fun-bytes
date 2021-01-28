@@ -6,7 +6,7 @@ variable "project_name" {
   validation {
     # check the length of the string and ensure it does not contain spaces
     # see https://www.terraform.io/docs/language/values/variables.html#custom-validation-rules
-    condition     = (
+    condition = (
       length(var.project_name) > 4 &&
       length(var.project_name) < 32 &&
       replace(var.project_name, " ", "") == var.project_name
@@ -17,7 +17,7 @@ variable "project_name" {
 }
 
 variable "tags" {
-  type = map(string)
+  type        = map(string)
   description = "Project tags for resources"
   default = {
     "Operator" = "Terraform"
