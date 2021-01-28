@@ -11,10 +11,6 @@ module "aks" {
   vnet_subnet_id       = module.network.vnet_subnets[0]
   os_disk_size_gb      = 100
 
-  tags = {
-    Operator = var.tags.Operator
-  }
-
   # see https://www.terraform.io/docs/language/meta-arguments/depends_on.html
   depends_on = [
     module.network

@@ -16,14 +16,6 @@ variable "project_name" {
   }
 }
 
-variable "tags" {
-  type        = map(string)
-  description = "Project tags for resources"
-  default = {
-    "Operator" = "Terraform"
-  }
-}
-
 variable "region" {
   type        = string
   description = "Azure Region to create resource(s) in"
