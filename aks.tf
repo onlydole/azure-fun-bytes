@@ -1,21 +1,4 @@
-resource "azurerm_resource_group" "project" {
-  name     = var.project_name
-  location = var.region
-}
-module "network" {
-  source              = "Azure/network/azurerm"
-  version             = "3.2.1"
-  resource_group_name = azurerm_resource_group.project.name
-  address_space       = "11.0.0.0/16"
-  subnet_prefixes     = ["11.0.1.0/24"]
-  subnet_names        = ["subnet1"]
-  depends_on          = [azurerm_resource_group.project]
-
-  tags = {
-    Operator = "Terraform"
-  }
-}
-
+# see https://registry.terraform.io/modules/Azure/aks/azurerm/4.7.0
 module "aks" {
   source               = "Azure/aks/azurerm"
   version              = "4.7.0"
@@ -29,6 +12,6 @@ module "aks" {
   depends_on           = [module.network]
 
   tags = {
-    Operator = "Terraform"
+    Operator = var.tags.Operator
   }
 }
