@@ -1,6 +1,6 @@
 output "azure_kubectl_command" {
   description = "Pre-filled kubectl command"
-  value = "az aks get-credentials --resource-group \"${azurerm_resource_group.project.name}\" --name \"${var.project_name}\""
+  value = "az aks get-credentials --resource-group ${azurerm_resource_group.project.name} --name ${var.project_name}"
 }
 
 #output "aks_host" {
