@@ -7,7 +7,6 @@
 - [Azure Fun Bytes](#azure-fun-bytes)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
-  - [Workflows](#workflows)
   - [Additional Reading](#additional-reading)
   - [Author Information](#author-information)
   - [License](#license)
@@ -22,6 +21,20 @@ To use the code in this repository, you will need the following applications:
 ## Author Information
 
 This repository is maintained by [Taylor Dolezal](https://github.com/onlydole) and [Kerim Satirli](https://github.com/ksatirli).
+
+## Additional Reading
+
+### Terraform
+
+* Creating Terraform resources: [learn.hashicorp.com/tutorials/terraform/azure-dependency](https://learn.hashicorp.com/tutorials/terraform/azure-dependency?in=terraform/azure-get-started)
+* Terraform Remote State: [learn.hashicorp.com/tutorials/terraform/azure-remote](https://learn.hashicorp.com/tutorials/terraform/azure-remote?in=terraform/azure-get-started)
+* Provisioning AKS Clusters: [learn.hashicorp.com/tutorials/terraform/aks](https://learn.hashicorp.com/tutorials/terraform/aks?in=terraform/kubernetes)
+* Managing Kubernetes resources: [learn.hashicorp.com/tutorials/terraform/kubernetes-provider](https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider?in=terraform/kubernetes)
+
+### Consul
+
+* Introduction to Consul [learn.hashicorp.com/tutorials/consul/deployment-overview](https://learn.hashicorp.com/tutorials/consul/deployment-overview?in=consul/production-deploy)
+* Consul on Kubernetes: [learn.hashicorp.com/collections/consul/gs-consul-service-mesh](https://learn.hashicorp.com/collections/consul/gs-consul-service-mesh)
 
 ## License
 
